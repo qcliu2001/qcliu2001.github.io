@@ -1,15 +1,15 @@
 ---
 permalink: /
-title: "About Me 🚀"
+title: "🚀 About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a first-year PhD student (MD-PhD program) at the School of Informatics, Xiamen University, advised by Prof. Zhang Zhihong. In 2023, I received a B.Mgt. from South-Central Minzu University. In 2024, I founded the GenIRAG team and have close collaboration with Chentao Zhang (张辰涛), Chenfeng Zheng (郑晨枫), and Yuxuan Hu (胡雨璇).
+I am a first-year PhD student (MD-PhD program) at the School of Informatics, Xiamen University, advised by Prof. Zhang Zhihong. In 2023, I received a B.Mgt. from South-Central Minzu University. In 2024, I founded the **GenIRAG Team** and have close collaboration with Chentao Zhang (张辰涛), Chenfeng Zheng (郑晨枫), and Yuxuan Hu (胡雨璇).
 
-My research interests focus on Information Retrieval (IR), Retrieval-Augmented Generation (RAG), Knowledge Graph (KG), and their applications in power systems.
+My research interests focus on Information Retrieval (IR), Retrieval-Augmented Generation (RAG), Knowledge Graph (KG), and their applications in Power Systems.
 
 My current research topics:
 
@@ -42,3 +42,12 @@ My current research topics:
 📖 Educations
 ======
 + _2019.09 - 2023.06_: Bachelor of Management, Department of Information Management and Information System, School of Management, South-Central Minzu University, Wuhan.
+
+
+------
+
+
+🔎 Professional Services
+======
++ Serve as a reviewer for the Conference on Information and Knowledge Management (CIKM) 2024.
+
