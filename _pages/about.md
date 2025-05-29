@@ -23,7 +23,7 @@ My current research topics:
 
 📝 Publications
 ======
-+ <div style="background-color: #3a87ad; display: inline-block; padding: 2px 4px; border-radius: 3px; color: white;height: 16px; line-height: 14px; font-size: 12px; font-weight: bold; float; left">ACL 2025</div> <span><b>Qichuan Liu</b>, Chentao Zhang, Chenfeng Zheng, Guosheng Hu, Xiaodong Li, and Zhihong Zhang*. Beyond the Answer: Advancing Multi-Hop QA with Fine-Grained Graph Reasoning and Evaluation, ACL main, 2025. <span style="color: red">(CCF-A)</span></span>
++ <div style="background-color: #3a87ad; display: inline-block; padding: 2px 4px; border-radius: 3px; color: white;height: 20px; line-height: 16px; font-size: 14px; font-weight: bold; float; left">ACL 2025</div> <span><b>Qichuan Liu</b>, Chentao Zhang, Chenfeng Zheng, Guosheng Hu, Xiaodong Li, and Zhihong Zhang*. Beyond the Answer: Advancing Multi-Hop QA with Fine-Grained Graph Reasoning and Evaluation, ACL main, 2025. <span style="color: red">(CCF-A)</span></span>
 
 📖 Educations
 ======
