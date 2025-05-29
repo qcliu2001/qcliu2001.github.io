@@ -7,6 +7,31 @@ redirect_from:
   - /about.html
 ---
 
+I am a first-year PhD student (MD-PhD program) at the School of Informatics, Xiamen University, advised by Prof. Zhang Zhihong. In 2023, I received a B.Mgt. from South-Central Minzu University. In 2024, I founded the GenIRAG team and have close collaboration with Chentao Zhang (张辰涛), Chenfeng Zheng (郑晨枫), and Yuxuan Hu (胡雨璇).
+
+My research interests focus on Information Retrieval (IR), Retrieval-Augmented Generation (RAG), Knowledge Graph (KG), and their applications in power systems.
+
+My current research topics:
+
++ Topic 1: Trustworthy & Interpretable Information Retrieval;
++ Topic 2: AI Applications in Knowledge-Intensive Power Business.
+
+## 🔥 News
+
++ 2025.05: 🎉 One paper was accepted by ACL 2025 (Main)!
++ 2024.10: I found the GenIRAG Team!
+
+## 📝 Publications
+
++ <div style="background-color: #3a87ad; display: inline-block; padding: 2px 4px; border-radius: 3px; color: white;height: 14px; line-height: 14px; font-size: 12px">ACL 2025</div> **Qichuan Liu**, Chentao Zhang, Chenfeng Zheng, Guosheng Hu, Xiaodong Li, and Zhihong Zhang. Beyond the Answer: Advancing Multi-Hop QA with Fine-Grained Graph Reasoning and Evaluation, ACL main, 2025. (CCF-A)
+
+## 📖 Educations
+
++ 2019.09 - 2023.06, Bachelor of Management, Department of Information Management and Information System, School of Management, South-Central Minzu University, Wuhan.
+
+
+
+
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
 A data-driven personal website
