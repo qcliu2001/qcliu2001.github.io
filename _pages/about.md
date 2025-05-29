@@ -47,7 +47,17 @@ My current research topics:
 ------
 
 
+🏆 Honors and Awards
+======
++ _2022.12_: China National Scholarship
++ _2021.12_: China National Scholarship
++ _2020.12_: China National Scholarship
+
+
+------
+
+
 🔎 Professional Services
 ======
-+ Serve as a reviewer for the Conference on Information and Knowledge Management (CIKM) 2024.
++ Serve as a reviewer for CIKM 2024.
 
