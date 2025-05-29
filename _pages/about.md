@@ -49,7 +49,7 @@ My current research topics:
 
 💬 Invited Talks
 ======
-+ _2025.05_: Seek Certainty in Uncertainty. Graduates' Sharing Session of the Information Management and Information System Department, School of Management, South-Central Minzu University, Wuhan, China.
++ _2025.05_: _Seek Certainty in Uncertainty_. Graduates' Sharing Session of the Information Management and Information System Department, School of Management, South-Central Minzu University, Wuhan, China.
 
 
 ------
