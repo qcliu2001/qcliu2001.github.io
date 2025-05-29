@@ -16,17 +16,17 @@ My current research topics:
 + Topic 1: Trustworthy & Interpretable Information Retrieval;
 + Topic 2: AI Applications in Knowledge-Intensive Power Business.
 
-## 🔥 News
-
+🔥 News
+======
 + 2025.05: 🎉 One paper was accepted by ACL 2025 (Main)!
 + 2024.10: I found the GenIRAG Team!
 
-## 📝 Publications
-
+📝 Publications
+======
 + <div style="background-color: #3a87ad; display: inline-block; padding: 2px 4px; border-radius: 3px; color: white;height: 16px; line-height: 14px; font-size: 12px; font-weight: bold; float; left">ACL 2025</div> <span><b>Qichuan Liu</b>, Chentao Zhang, Chenfeng Zheng, Guosheng Hu, Xiaodong Li, and Zhihong Zhang*. Beyond the Answer: Advancing Multi-Hop QA with Fine-Grained Graph Reasoning and Evaluation, ACL main, 2025. <span style="color: red">(CCF-A)</span></span>
 
-## 📖 Educations
-
+📖 Educations
+======
 + 2019.09 - 2023.06, Bachelor of Management, Department of Information Management and Information System, School of Management, South-Central Minzu University, Wuhan.
 
 
