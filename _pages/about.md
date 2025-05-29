@@ -13,13 +13,21 @@ My research interests focus on Information Retrieval (IR), Retrieval-Augmented G
 
 My current research topics:
 
-+ Topic 1: Trustworthy & Interpretable Information Retrieval;
-+ Topic 2: AI Applications in Knowledge-Intensive Power Business.
++ **Topic 1**: Trustworthy & Interpretable Information Retrieval;
++ **Topic 2**: AI Applications in Knowledge-Intensive Power Business.
+
+
+------
+
 
 🔥 News
 ======
-+ 2025.05: 🎉 One paper was accepted by ACL 2025 (Main)!
-+ 2024.10: I found the GenIRAG Team!
++ _2025.05_: 🎉 One paper was accepted by ACL 2025 (Main)!
++ _2024.10_: I found the GenIRAG Team!
+
+
+------
+
 
 📝 Publications
 ======
@@ -27,6 +35,10 @@ My current research topics:
 + <p style="inline"><div style="background-color: #3a87ad; display: inline-block; padding: 2px 4px; border-radius: 3px; color: white;height: 20px; line-height: 16px; font-size: 14px; font-weight: bold; float; left; margin-right: 5px">ICIC 2024</div>Feilong Liao, Jianye Huang, <b>Qichuan Liu*</b>, Xinjie Peng, Bingqian Liu, Xinxin Wu, and Jian Qian. TCEKG: A Temporal and Causal Event Knowledge Graph for Power Distribution Network Fault Diagnosis, ICIC, 2024. <span style="font-weight: bold">(CCF-C)</span></p>
 + <p style="inline"><div style="background-color: #3a87ad; display: inline-block; padding: 2px 4px; border-radius: 3px; color: white;height: 20px; line-height: 16px; font-size: 14px; font-weight: bold; float; left; margin-right: 5px">ICIC 2024</div>Jinxiong Zhao, Zhicheng Ma, Hong Zhao, Xun Zhang, <b>Qichuan Liu</b>, and Chentao Zhang*. ﻿Self-consistency, Extract and Rectify: Knowledge Graph Enhance Large Language Model for Electric Power Question Answering, ICIC, 2024. <span style="font-weight: bold">(CCF-C)</span></p>
 
+
+------
+
+
 📖 Educations
 ======
-+ 2019.09 - 2023.06, Bachelor of Management, Department of Information Management and Information System, School of Management, South-Central Minzu University, Wuhan.
++ _2019.09 - 2023.06_: Bachelor of Management, Department of Information Management and Information System, School of Management, South-Central Minzu University, Wuhan.
