@@ -23,8 +23,8 @@ main:
  # - title: "Blog Posts"
  #  url: /year-archive/
     
-#  - title: "Chinese"
-#    url: /test/
+  - title: "Conversational Search"
+    url: /test/
     
   # - title: "CV"
   #   url: /cv-json/
