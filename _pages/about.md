@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year PhD student (MD-PhD program) at the School of Informatics, Xiamen University, advised by Prof. Zhihong Zhang. In 2023, I received a B.Mgt. from South-Central Minzu University. In 2024, I founded the **GenIRAG Team** and have close collaboration with Chentao Zhang (张辰涛), Chenfeng Zheng (郑晨枫), and Yuxuan Hu (胡雨璇).
+I am a first-year PhD student (MD-PhD Program) at the School of Informatics, Xiamen University, advised by Prof. Zhihong Zhang. In 2023, I received a B.Mgt. from South-Central Minzu University. In 2024, I founded the **GenIRAG Team** and have close collaboration with Chentao Zhang (张辰涛), Chenfeng Zheng (郑晨枫), and Yuxuan Hu (胡雨璇).
 
 My research interests focus on Information Retrieval (IR), Retrieval-Augmented Generation (RAG), Knowledge Graph (KG), and their applications in Power Systems.
 
