@@ -1,101 +1,379 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="About Me - Qichuan LIU">
-    <title>About Me - Qichuan Liu</title>
-    <link rel="icon" media="(prefers-color-scheme:dark)" href="./assets/imgs/favicon.svg" type="image/svg" />
-    <link rel="icon" media="(prefers-color-scheme:light)" href="./assets/imgs/favicon.svg" type="image/svg" />
-    <link href="./assets/css/profile.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="description" content="About Me - Qichuan LIU">
+  <title>Qichuan LIU - About Me</title>
+  <link rel="icon" href="images/doujiang.svg" type="image/svg">
+  <!-- https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.10/tailwindcss.min.js -->
+  <script src="js/tailwindcss.min.js"></script>
+  <!-- https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css -->
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- <link rel="stylesheet" href="all.min.css"> -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            tag_journal: '#eff6ff', // 期刊标签背景
+            tag_conference: '#f0fdf4', // 会议标签背景
+            tag_rank: '#fef2f2' // 等级标签背景
+          },
+          // 全局 Georgia 字体
+          fontFamily: {
+            sans: ['Georgia', 'Times New Roman', 'Times', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+<style>
+/* 让 Chrome 图片渲染无限接近 Safari */
+img {
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: smooth !important;
+  -webkit-font-smoothing: antialiased !important;
+  color-scheme: light !important;
+  /* 轻微柔化，抵消 Chrome 过度锐化 */
+  filter: contrast(99%) saturate(99%) !important;
+  backface-visibility: hidden !important;
+  transform: translateZ(0) !important;
+}
+/* 圆形头像（bio.jpg）专门柔化 + 模拟 Safari 圆角质感 */
+.rounded-full img {
+  border-radius: 9999px !important;
+  /* 极淡内阴影 + 外晕，让圆边像 Safari 一样顺滑无锯齿 */
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.08), inset 0 0 0 1px rgba(255,255,255,0.05) !important;
+  -webkit-clip-path: circle(50% at center) !important;
+  clip-path: circle(50% at center) !important;
+}
+/* Photos 里的图片统一柔化 */
+#photos img {
+  filter: contrast(99%) saturate(99%) !important;
+}
+</style>
 </head>
-<body>
-<div id="layout-content" style="margin-top: 25px;">
-  <table>
-    <tbody><tr>
-      <td width="670">
-        <div id="toptitle">
-          <h1>Qichuan LIU</h1>
-        </div>
-        <h3><span class="emoji">🎓</span> PhD student</h3>
-        <p>School of Informatics, Xiamen University
-        <div class="contact-box">
-            <img src="./assets/imgs/envelope.png" alt="Email">
-            <a href="qcliu2001@stu.xmu.edu.cn">qcliu2001@stu.xmu.edu.cn</a>
 
-            <img src="./assets/imgs/google.png" alt="Google Scholar">
-            <a href="https://scholar.google.com.hk/citations?user=3CJCdSEAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-            <img src="./assets/imgs/github.png" alt="GitHub">
-            <a href="https://github.com/GenIRAG" target="_blank">GitHub</a>
+  <!-- 顶部导航栏 -->
+  <nav class="sticky top-0 bg-white shadow-sm z-50">
+    <div class="max-w-8xl mx-auto px-8 h-16 flex items-center justify-center space-x-8 text-base">
+      <a href="#biography" class="text-gray-700 hover:text-primary font-medium">Biography</a>
+      <a href="#news" class="text-gray-700 hover:text-primary font-medium">News</a>
+      <a href="#photos" class="text-gray-700 hover:text-primary font-medium">Photos</a>
+      <a href="#publications" class="text-gray-700 hover:text-primary font-medium">Publications</a>
+      <a href="#educations" class="text-gray-700 hover:text-primary font-medium">Educations</a>
+      <a href="#awards" class="text-gray-700 hover:text-primary font-medium">Awards</a>
+      <a href="#services" class="text-gray-700 hover:text-primary font-medium">Services</a>
+    </div>
+  </nav>
+
+  <!-- 页面主体：左侧400px（窄）、右侧800px（更宽） -->
+<div class="max-w-8xl mx-auto px-8 py-12">
+  <div class="grid grid-cols-1 lg:grid-cols-[400px_900px] gap-8 justify-center">
+
+
+        <!-- 左侧：固定400px（窄）- 修复Sticky和布局问题 -->
+        <div class="lg:w-[400px] space-y-8">
+          <!-- 个人信息 -->
+          <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 top-24 w-full scroll-mt-16">
+              <!-- 个人信息 - 圆形真实照片（bio.jpg） -->
+              <div class="w-36 h-36 rounded-full mx-auto mb-3 overflow-hidden">
+                <img src="images/bio.jpg" alt="Qichuan LIU" class="w-full h-full object-cover">
+              </div>
+              <div class="text-center">
+              <h1 class="text-2xl font-bold text-gray-900 mb-3">Qichuan LIU</h1>
+              <p class="text-base text-gray-600 mb-5">School of Informatics, Xiamen University</p>
+              <div class="space-y-2 text-base text-gray-500">
+                  <p><i class="fa-solid fa-envelope text-primary mr-1"></i> qcliu2001@stu.xmu.edu.cn</p>
+                  <p><i class="fa-brands fa-github text-primary mr-1"></i> https://github.com/GenIRAG</p>
+                  <!-- <p><i class="fa-solid fa-location-dot text-primary mr-2"></i> City, Country</p> -->
+              </div>
+              </div>
+          </div>
+
+          <!-- News 模块 -->
+          <div id="news" class="bg-white rounded-2xl shadow-sm px-8 py-6 border border-gray-100 top-24 mt-8 w-full scroll-mt-16">
+              <h2 class="text-lg font-bold mb-4 flex items-center">
+              <i class="fa-solid fa-bell text-primary mr-2"></i>News
+              </h2>
+              <ul class="text-base space-y-3 text-gray-700">
+              <li class="border-l-2 border-primary pl-3 py-1">
+                  <span class="font-medium"><b>2026.01</b></span>
+                  <p class="text-base text-gray-600">Our paper was accepted by <a href="https://www2026.thewebconf.org/" target="_blank" class="text-primary hover:underline">WWW'26</a>!</p>
+              </li>
+              <li class="border-l-2 border-primary pl-3 py-1">
+                  <span class="font-medium"><b>2025.10</b></span>
+                  <p class="text-base text-gray-600">🎉 GenIRAG Team's First Anniversary!</p>
+              </li>
+              <li class="border-l-2 border-primary pl-3 py-1">
+                  <span class="font-medium"><b>2025.05</b></span>
+                  <p class="text-base text-gray-600">Our paper was accepted by <a href="https://aclanthology.org/2025.acl-long.1142" target="_blank" class="text-primary hover:underline">ACL'25 (Main)</a>!</p>
+              </li>
+              <li class="border-l-2 border-primary pl-3 py-1">
+                  <span class="font-medium"><b>2024.10</b></span>
+                  <p class="text-base text-gray-600">I found the GenIRAG Team!</p>
+              </li>
+              </ul>
+          </div>
+
+        <!-- Photos -->
+        <div id="photos" class="bg-white rounded-2xl shadow-sm px-8 py-6 border border-gray-100 mt-8 w-full scroll-mt-16">
+          <h2 class="text-lg font-bold mb-4 flex items-center">
+            <i class="fa-solid fa-image text-primary mr-2"></i>Photos
+          </h2>
+          <div class="relative rounded-lg overflow-hidden">
+            <img src="images/pic1.jpg" alt="Conference Photo" class="w-full h-40 object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-sm p-2">
+              Presenting Poster at ACL 2025 (Vienna, Austria)
+            </div>
+          </div>
+          <div class="relative rounded-lg overflow-hidden mt-6">
+            <img src="images/pic2.jpg" alt="Conference Photo" class="w-full h-40 object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-sm p-2">
+              Scenery of Vienna (Vienna, Austria)
+            </div>
+          </div>
+          <div class="relative rounded-lg overflow-hidden mt-6">
+            <img src="images/pic3.jpg" alt="Conference Photo" class="w-full h-40 object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-sm p-2">
+              Scenery of Vienna (Vienna, Austria)
+            </div>
+          </div>
         </div>
+
+
+        </div>
+
+      <!-- 右侧：固定800px（更宽） -->
+      <div class="space-y-8">
+        
+        <!-- Biography -->
+        <div id="biography" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 scroll-mt-16">
+          <h2 class="text-lg font-bold mb-3 flex items-center">
+            <i class="fa-solid fa-user-pen text-primary mr-2"></i>Biography
+          </h2>
+          <p class="text-base text-gray-700 leading-relaxed">
+            I am a first-year PhD student at Xiamen University, advised by <a href="https://informatics.xmu.edu.cn/old/info/1475/44160.htm" target="_blank" class="text-primary hover:underline">Prof. Zhihong Zhang</a> and <a href="https://qing145.github.io" target="_blank" class="text-primary hover:underline">Dr. Qinggang Zhang</a> (The Hong Kong Polytechnic University). In 2023, I received a B.Mgt. from South-Central Minzu University. In 2024, I founded the <b>GenIRAG Team</b> and have close work with <a href="https://forevermeteor.github.io" target="_blank" class="text-primary hover:underline">Chentao Zhang</a>, Chenfeng Zheng, and Yuxuan Hu.
         </p>
-      </td>
-      <td>
-        <div>
-            <img class="profile-pic" src="./assets/imgs/bio.jpg" alt="Profile Picture">
+          <p class="text-base text-gray-700 leading-relaxed">
+            My research interests include Information Retrieval (IR), Retrieval-Augmented Generation (RAG) and Knowledge Graph (KG). Currently, my research topics is <b>Trustworthy Retrieval-Augmented AI and Its Application</b>.
+          </p>
+          </div>
+
+
+        <!-- Publications（会议/期刊与标题同行 + 适配加宽右侧栏） -->
+        <div id="publications" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 scroll-mt-16">
+          <h2 class="text-lg font-bold mb-4 flex items-center">
+            <i class="fa-solid fa-book-open text-primary mr-2"></i>Publications
+          </h2>
+          
+          <!-- 论文1 -->
+          <div class="mb-6 pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
+            <div class="flex items-center gap-3 mb-2 flex-wrap">
+              
+              <h3 class="text-base font-medium text-gray-900">
+                <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-2">WWW'26</span>
+                Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search
+              </h3>
+            </div>
+            <p class="text-base text-gray-600 mb-3">
+              <b>Qichuan Liu</b>, Chentao Zhang, Yuxuan Hu, Chenfeng Zheng, Qinggang Zhang, and Zhihong Zhang* · 2026
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 text-xs rounded-full bg-tag_rank text-red-600">CCF A</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Conversational Search</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Generative Retrieval</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Long Chain-of-Thought</span>
+            </div>
+            <div class="flex gap-4 text-base flex-wrap">
+              <a href="" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-solid fa-file-pdf mr-1"></i> Paper (Coming Soon)
+              </a>
+              <a href="https://github.com/GenIRAG/LogiCGR" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-brands fa-github mr-1"></i> Code & Data (GitHub)
+              </a>
+            </div>
+          </div>
+
+          <!-- 论文2 -->
+          <div class="mb-6 pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
+            <div class="flex items-center gap-3 mb-2 flex-wrap">
+              
+              <h3 class="text-base font-medium text-gray-900">
+                <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-2">ACL'25</span>
+                Beyond the Answer: Advancing Multi-Hop QA with Fine-Grained Graph Reasoning and Evaluation
+              </h3>
+
+            </div>
+            <p class="text-base text-gray-600 mb-3">
+              <b>Qichuan Liu</b>, Chentao Zhang, Chenfeng Zheng, Guosheng Hu, Xiaodong Li, and Zhihong Zhang*· 2025
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 text-xs rounded-full bg-tag_rank text-red-600">CCF A</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Multi-hop QA</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Question Decomposition</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Evaluation</span>
+            </div>
+            <div class="flex gap-4 text-base flex-wrap">
+              <a href="https://aclanthology.org/2025.acl-long.1142/" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-solid fa-file-pdf mr-1"></i> Paper (PDF)
+              </a>
+              <a href="https://github.com/GenIRAG/PER-PSE" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-brands fa-github mr-1"></i> Code (GitHub)
+              </a>
+              <a href="https://huggingface.co/datasets/GenIRAG/PER-PSE" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-solid fa-file-arrow-up mr-1"></i> Benchmark (HuggingFace)
+              </a>
+            </div>
+          </div>
+
+          <!-- 论文3 -->
+          <div class="mb-6 pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
+            <div class="flex items-center gap-3 mb-2 flex-wrap">
+              
+              <h3 class="text-base font-medium text-gray-900">
+                <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-2">ICIC'24</span>
+                TCEKG: A Temporal and Causal Event Knowledge Graph for Power Distribution Network Fault Diagnosis
+              </h3>
+
+            </div>
+            <p class="text-base text-gray-600 mb-3">
+              Feilong Liao, Jianye Huang, <b>Qichuan Liu*</b>, Xinjie Peng, Bingqian Liu, Xinxin Wu, and Jian Qian· 2024
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">CCF C</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Domain-specific Task</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Event Knowledge Graph</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Graph Construction</span>
+            </div>
+            <div class="flex gap-4 text-base flex-wrap">
+              <a href="https://link.springer.com/chapter/10.1007/978-981-97-5615-5_41" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-solid fa-file-pdf mr-1"></i> Paper (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- 论文4 -->
+          <div class="mb-6 pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
+            <div class="flex items-center gap-3 mb-2">
+              
+              <h3 class="text-base font-medium text-gray-900">
+                <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-2">ICIC'24</span>
+                Self-consistency, Extract and Rectify: Knowledge Graph Enhance Large Language Model for Electric Power Question Answering
+              </h3>
+
+            </div>
+            <p class="text-base text-gray-600 mb-3">
+              Jinxiong Zhao, Zhicheng Ma, Hong Zhao, Xun Zhang, <b>Qichuan Liu</b>, and Chentao Zhang*· 2024
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">CCF C</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Domain-specific QA</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Graph Retrieval-Augmented Generation</span>
+              <span class="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-700">Graph Construction</span>
+            </div>
+            <div class="flex gap-4 text-base flex-wrap">
+              <a href="https://link.springer.com/chapter/10.1007/978-981-97-5615-5_40" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-solid fa-file-pdf mr-1"></i> Paper (PDF)
+              </a>
+              <a href="https://github.com/ForeverMeteor/SCER" target="_blank" class="flex items-center text-primary hover:underline">
+                <i class="fa-brands fa-github mr-1"></i> Code (GitHub)
+              </a>
+            </div>
+          </div>
+
         </div>
-      </td>
-    </tr></tbody>
-  </table>
 
-  <h2>Biography</h2>
-  <p>I am a first-year PhD student at the School of Informatics, Xiamen University, advised by <a href="https://informatics.xmu.edu.cn/old/info/1475/44160.htm" target="_blank">Prof. Zhihong Zhang</a> and <a href="https://qing145.github.io" target="_blank">Dr. Qinggang Zhang</a> (Hong Kong Polytechnic University). In 2023, I received a B.Mgt. from South-Central Minzu University. In 2024, I founded the GenIRAG Team and have close work with <a href="https://forevermeteor.github.io", target="_blank">Chentao Zhang</a>, Chenfeng Zheng, and Yuxuan Hu.</p>
-  <p>My research interests include Information Retrieval (IR), Retrieval-Augmented Generation (RAG) and Knowledge Graph (KG). Currently, my research topics is <b>Trustworthy Retrieval-Augmented AI and Its Application</b>.</p>
-  <h2>News</h2>
-  <ul>
-    <li>[2026.01] Our paper was accepted by <a href="https://www2026.thewebconf.org/" target="_blank">WWW'26</a>!</li>
-    <li>[2025.10] 🎉 GenIRAG Team's First Anniversary!</li>
-    <li>[2025.05] Our paper was accepted by <a href="https://aclanthology.org/2025.acl-long.1142" target="_blank">ACL'25 (Main)</a>!</li>
-    <li>[2024.10] I found the GenIRAG Team!</li>
-  </ul>
+        <!-- Educations（与奖项模块风格统一：年份小框+垂直居中） -->
+        <div id="educations" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 scroll-mt-16">
+          <h2 class="text-lg font-bold mb-4 flex items-center">
+            <i class="fa-solid fa-graduation-cap text-primary mr-2"></i>Educations
+          </h2>
+          <!-- 与奖项模块一致的flex+垂直居中布局 -->
+          <ul class="text-base space-y-3 text-gray-700">
+            <li class="flex items-center gap-2">
+              <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-1">2023.09–Now</span>
+              PhD candidate, Computer Science and Technology, Xiamen University, Xiamen, China.
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-1">2019.09–2023.06</span>
+              Bachelor of Management, South-Central Minzu University, Wuhan, China.
+            </li>
+            <!-- 新增教育经历按此格式添加 -->
+          </ul>
+        </div>
 
-  <h2>Publications</h2>
-  <ul>
-    <li>
-          <b>[WWW'26] Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search.</b><br />
-          <b>Qichuan Liu</b>, Chentao Zhang, Yuxuan Hu, Chenfeng Zheng, Qinggang Zhang, and Zhihong Zhang*.<br /> 
-    </li>
-    <li>
-          <b>[ACL'25] Beyond the Answer: Advancing Multi-Hop QA with Fine-Grained Graph Reasoning and Evaluation.</b> 
-          [<a href="https://aclanthology.org/2025.acl-long.1142/" target="_blank">Paper</a>] [<a href="https://github.com/GenIRAG/PER-PSE" target="_blank">Code</a>] [<a href="https://huggingface.co/datasets/GenIRAG/PER-PSE" target="_blank">Data</a>]<br />
-          <b>Qichuan Liu</b>, Chentao Zhang, Chenfeng Zheng, Guosheng Hu, Xiaodong Li, and Zhihong Zhang*.<br /> 
-    </li>
-    <li>
-          <b>[ICIC'24] TCEKG: A Temporal and Causal Event Knowledge Graph for Power Distribution Network Fault Diagnosis.</b>
-          [<a href="https://link.springer.com/chapter/10.1007/978-981-97-5615-5_41" target="_blank">Paper</a>]<br />
-          Feilong Liao, Jianye Huang, <b>Qichuan Liu*</b>, Xinjie Peng, Bingqian Liu, Xinxin Wu, and Jian Qian.<br />
-    </li>
-    <li>
-          <b>[ICIC'24] Self-consistency, Extract and Rectify: Knowledge Graph Enhance Large Language Model for Electric Power Question Answering.</b>
-          [<a href="https://link.springer.com/chapter/10.1007/978-981-97-5615-5_40" target="_blank">Paper</a>]<br />
-          Jinxiong Zhao, Zhicheng Ma, Hong Zhao, Xun Zhang, <b>Qichuan Liu</b>, and Chentao Zhang*.<br />
-    </li>
-  </ul>
 
-  <h2>Educations</h2>
-  <ul>
-    <li>[2023.09-Now] Successive postgraduate and doctoral programs of study, Computer Science and Technology, Xiamen University, Xiamen, China.</li>
-    <li>[2019.09-2023.06] Bachelor of Management, South-Central Minzu University, Wuhan, China.</li>
+        <!-- Awards and Honors（年份小框+文字垂直居中） -->
+        <div id="awards" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 scroll-mt-16">
+          <h2 class="text-lg font-bold mb-4 flex items-center">
+            <i class="fa-solid fa-medal text-primary mr-2"></i>Awards and Honors
+          </h2>
+          <!-- 用flex+items-center实现垂直居中，布局仍极简 -->
+          <ul class="text-base space-y-3 text-gray-700">
+            <li class="flex items-center gap-2">
+              <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-1">2020-2023</span>
+              National scholarships ~ 3 times
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-1">2022.07</span>
+              National Second Prize in the 15th Chinese Collegiate Computing Competition
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="px-2 py-1 text-sm rounded-lg bg-primary/5 text-primary font-medium mr-1">2022.03</span>
+              National Third Prize in the 17th "Challenge Cup" Competition
+            </li>
+            <!-- 新增奖项按此格式添加 -->
+          </ul>
+        </div>
+
+
+        <!-- Professional Services -->
+        <div id="services" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 scroll-mt-16">
+          <h2 class="text-lg font-bold mb-3 flex items-center">
+            <i class="fa-solid fa-handshake-angle text-primary mr-2"></i>Professional Services
+          </h2>
+          <p class="text-base text-gray-700">Serve as a reviewer for CIKM'24.</p>
+        </div>
+      </div>
+    </div>
+  </div>
     
-  </ul>
+  <!-- 页脚（英文 + 网站运行时间） -->
+  <footer class="bg-white shadow-inner border-t border-gray-100 py-6">
+    <div class="max-w-8xl mx-auto px-8 text-center text-gray-500 text-sm">
+      <p>© 2026 Qichuan LIU. All Rights Reserved.</p>
+      <p class="mt-1">
+        This site has been running: <span id="runtime">0 days 0 hrs 0 mins 0 secs</span>
+        | Powered by Tailwind CSS
+      </p>
+    </div>
+  </footer>
 
-  <h2>Awards and Honors</h2>
-  <ul>
-      <li>[2020-2023] National scholarships ~ 3 times</li>
-      <li>[2022.07] National Second Prize in the 15th Chinese Collegiate Computing Competition</li>
-      <li>[2022.03] National Third Prize in the 17th "Challenge Cup" Competition</li>
-  </ul>
+  <script>
+    // 改成你的网站上线日期：年, 月-1, 日
+    const launchDate = new Date(2025, 5, 27);
 
-  <h2>Professional Services</h2>
-  <ul>
-    <li>Serve as a reviewer for CIKM'24.</li>
-  </ul>
-</div>
+    function updateRuntime() {
+      const now = new Date();
+      const diff = now - launchDate;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('runtime').textContent = 
+        `${days} days ${hours} hrs ${minutes} mins ${seconds} secs`;
+    }
+
+    updateRuntime();
+    setInterval(updateRuntime, 1000);
+  </script>
+
 </body>
 </html>
-
-
-
-
-
-
