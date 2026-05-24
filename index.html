@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="About Me - Qichuan Liu">
-  <title>Qichuan Liu's Homepage</title>
+  <title>Qichuan LIU - Homepage</title>
   <link rel="icon" href="images/site.svg" type="image/svg">
   <!-- https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.10/tailwindcss.min.js -->
   <script src="js/tailwindcss.min.js"></script>
@@ -54,7 +54,7 @@
         @apply text-base space-y-3 text-gray-700;
       }
       .news-li {
-        @apply border-l-2 border-primary pl-3 py-0.5;
+        @apply border-l-2 border-primary pl-3 py-0.5 break-words hyphens-auto;
       }
       .photo-frame {
         @apply relative rounded-lg overflow-hidden;
@@ -150,7 +150,6 @@
       image-rendering: smooth !important;
       -webkit-font-smoothing: antialiased !important;
       color-scheme: light !important;
-      /* 轻微柔化，抵消 Chrome 过度锐化 */
       filter: contrast(99%) saturate(99%) !important;
       backface-visibility: hidden !important;
       transform: translateZ(0) !important;
@@ -190,7 +189,6 @@
 
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- 导航栏（仅保留class="nav-item"，极致简洁） -->
   <nav class="sticky top-0 bg-white shadow-sm z-50">
     <div class="max-w-8xl mx-auto px-8 h-16 flex items-center justify-center space-x-8 text-base">
       <a href="#biography" class="nav-item">Biography</a>
@@ -269,6 +267,10 @@
               <p class="news-info">Our <a href="https://aclanthology.org/2025.acl-long.1142" target="_blank"
                   class="paper-button-link inline">PER-PSE</a> for fine-grained multi-hop QA was accepted by <a
                   href="https://aclanthology.org/2025.acl-long.1142" target="_blank" class="link">ACL'25 (Main)</a>!</p>
+            </li>
+            <li class="news-li">
+              <span><b>2024.10.18</b></span>
+              <p class="news-info">I participated in CCIR 2024 and had academic discussions in Wuhan, China.</p>
             </li>
             <li class="news-li">
               <span><b>2024.10.08</b></span>
@@ -372,7 +374,8 @@
         <!-- Publications -->
         <div id="publications" class="right-column-module">
           <h2 class="module-title mb-4">
-            <i class="fa-solid fa-book-open text-primary mr-2"></i>Publications<span class="text-sm font-normal ml-2">(‡
+            <i class="fa-solid fa-book-open text-primary mr-2"></i>Publications<span class="text-sm font-normal ml-2">(†
+              for co-first author, ‡
               for corresponding author)</span>
           </h2>
 
@@ -389,7 +392,7 @@
 
             <p class="paper-author">
               <i class="fa-solid fa-user text-xs text-gray-600 mr-1 ml-1"></i>
-              <b>Qichuan Liu</b>, Chenfeng Zheng, Yuxuan Hu, Zerui Chen, Chentao Zhang, Qinggang Zhang‡, and Zhihong
+              <b>Qichuan Liu†</b>, Qinggang Zhang†, Yuxuan Hu, Chenfeng Zheng, Zerui Chen, Chentao Zhang, and Zhihong
               Zhang‡ · 2026
             </p>
 
@@ -423,8 +426,8 @@
               <a href="" target="_blank" class="paper-button-link">
                 <i class="fa-solid fa-file-pdf mr-1"></i> Paper (Coming Soon)
               </a>
-              <a href="" target="_blank" class="paper-button-link">
-                <i class="fa-brands fa-github mr-1"></i> Code & Data (Coming Soon)
+              <a href="https://github.com/GenIRAG/KG-Translator" target="_blank" class="paper-button-link">
+                <i class="fa-brands fa-github mr-1"></i> Code & Data (Github)
               </a>
             </div>
           </div>
@@ -614,13 +617,16 @@
           </h2>
           <ul class="timeline-ul">
             <li class="timeline-li">
-              2023.09-Now ·
-              Ph.D. student (硕博连读) in Computer Science and Technology, Xiamen University, Xiamen, China.
+              2025.09-Now ·
+              Ph.D. Student, School of Informatics, Xiamen University, Xiamen, China.
+            </li>
+            <li class="timeline-li">
+              2023.09-2025.06 ·
+              Master Student, School of Informatics, Xiamen University, Xiamen, China. (Proceed to Ph.D.)
             </li>
             <li class="timeline-li">
               2019.09-2023.06 ·
-              B.Mgt. in Information Management and Information Systems, Business Big Data Analysis and Application
-              Experimental Class (商务大数据分析与应用实验班), South-Central Minzu University, Wuhan, China.
+              B.Mgt., School of Management, South-Central Minzu University, Wuhan, China.
             </li>
           </ul>
         </div>
@@ -634,7 +640,7 @@
           <ul class="timeline-ul">
             <li class="timeline-li">
               2023.03-2023.04 ·
-              China Electric Power Research Institute (中国电力科学研究院), State Grid, Beijing, China.
+              China Electric Power Research Institute, State Grid, Beijing, China.
             </li>
           </ul>
         </div>
@@ -647,11 +653,8 @@
           </h2>
           <ul class="timeline-ul">
             <li class="timeline-li">
-              2023.07 · Official Media Report of South-Central Minzu University
-              <a href="https://mp.weixin.qq.com/s/acHrjEIYdaSAXlraISKDdQ" target="_blank"
-                class="paper-button-link inline">
-                (<i class="fa-brands fa-weixin ml-0.5 mr-0.5 text-[#57ac6e]"></i>WeChat Official Account)
-              </a>
+              2023.07 · <a href="https://mp.weixin.qq.com/s/acHrjEIYdaSAXlraISKDdQ" target="_blank"
+                class="paper-button-link inline">Official Media Report</a> of South-Central Minzu University
             </li>
             <li class="timeline-li">
               2020-2023 · National scholarship for Undergraduates ~ 3 times
@@ -660,10 +663,10 @@
               2022.07 · National Second Prize 🥈 in the 15th Chinese Collegiate Computing Competition
             </li>
             <li class="timeline-li">
-              2022.06 · National First Prize 🥇 in the 10th "TipDM Cup (泰迪杯)" Data Mining Challenge
+              2022.06 · National First Prize 🥇 in the 10th "TipDM Cup" Data Mining Challenge
             </li>
             <li class="timeline-li">
-              2022.03 · National Third Prize 🥉 in the 17th "Challenge Cup (挑战杯)" Competition
+              2022.03 · National Third Prize 🥉 in the 17th "Challenge Cup" Competition
             </li>
           </ul>
         </div>
@@ -678,10 +681,10 @@
             <li class="timeline-li">
               2024 · Served as an invited reviewer at CIKM'24.
             </li>
-            <li class="timeline-li">
+            <!-- <li class="timeline-li">
               2022-2023 · Participated in compiling the monograph <u>Comprehensive Training in Information System
-                Development</u> (信息系统开发综合实训, 清华大学出版社), contributing to full Chapters 6, 11 and part of Chapter 13.
-            </li>
+                Development</u>, contributing to full Chapters 6, 11 and part of Chapter 13.
+            </li> -->
           </ul>
         </div>
 
